@@ -22,7 +22,7 @@ public class ConsumerApplication {
 				.replicas(1)
 				.build();
 	}
-	@KafkaListener(id = "myId", topics = "topic")
+	@KafkaListener(id = "myId", topics = "topic1")
 	public void listen(String in){
 		System.out.println(in);
 	}
